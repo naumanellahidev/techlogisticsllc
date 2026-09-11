@@ -90,38 +90,192 @@
   </header>
 
   <main id="mainContent">
-    <!-- Hero Section -->
-    <section class="hero" aria-labelledby="heroHeading">
+    <!-- Premium Hero Section -->
+    <section class="hero-premium" aria-labelledby="heroHeading">
       <div class="container">
-        <div class="hero-content">
-          <h1 id="heroHeading" class="hero-headline">Dependable Truck Dispatch Services for United States Carriers</h1>
-          <p class="hero-lead">
-            Tech Logistics LLC is a truck dispatch service that finds and books freight for trucking companies and owner-operators across the United States. We manage broker negotiations, rate confirmations, carrier packets, and daily route scheduling so your trucks stay loaded and moving profitably.
-          </p>
-          <div class="hero-actions">
-            <a href="services.html" class="btn btn-primary">View Services &amp; Pricing</a>
-            <a href="contact.html" class="btn btn-secondary" style="color: #ffffff; border-color: rgba(255,255,255,0.4);">Speak with Support</a>
+        <div class="hero-grid">
+          
+          <!-- Hero Text & Copy -->
+          <div>
+            <div class="pill-badge">
+              <span class="pulse-dot" aria-hidden="true"></span>
+              <span>Active US Commercial Freight Network &bull; Zero Upfront Retainers</span>
+            </div>
+
+            <h1 id="heroHeading" class="hero-premium-title">Premier Truck Dispatch Services Built for American Motor Carriers</h1>
+            
+            <p class="hero-premium-lead">
+              Tech Logistics LLC is a truck dispatch service that finds and books freight for trucking companies and owner-operators across the United States. We manage broker negotiations, rate confirmations, carrier packets, and daily route scheduling so your trucks stay loaded and moving profitably.
+            </p>
+
+            <div class="hero-actions">
+              <a href="services.html" class="btn btn-primary" style="box-shadow: 0 4px 14px rgba(192, 86, 33, 0.4);">View Services &amp; Rates</a>
+              <a href="contact.html" class="btn btn-secondary" style="color: #ffffff; border-color: rgba(255,255,255,0.3); background: rgba(255,255,255,0.05);">Contact Support Desk</a>
+            </div>
+
+            <div class="hero-badges" style="margin-top: var(--space-6);">
+              <div class="badge-item">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+                <span>No Upfront Charges</span>
+              </div>
+              <div class="badge-item">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+                <span>Invoiced After Complete Delivery</span>
+              </div>
+              <div class="badge-item">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+                <span>Wyoming Registered LLC</span>
+              </div>
+            </div>
           </div>
-          <div class="hero-badges">
-            <div class="badge-item">
-              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
-              <span>No Upfront Charges</span>
+
+          <!-- Interactive Take-Home Dispatch Estimator Widget -->
+          <div>
+            <div class="calc-card" role="region" aria-label="Dispatch Fee Calculator">
+              <div class="calc-header">
+                <div class="calc-title">
+                  <svg style="width: 18px; height: 18px; fill: #60a5fa;" viewBox="0 0 24 24"><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-5 14H7v-2h7v2zm3-4H7v-2h10v2zm0-4H7V7h10v2z"/></svg>
+                  <span>Settlement Estimator</span>
+                </div>
+                <span class="calc-badge">$0 Upfront Required</span>
+              </div>
+
+              <div class="slider-group">
+                <div class="slider-label-row">
+                  <label for="revenueSlider" style="cursor: pointer;">Weekly Gross Load Revenue</label>
+                  <span id="sliderGrossDisplay" class="slider-value-display">$7,500</span>
+                </div>
+                <input type="range" id="revenueSlider" class="calc-range-input" min="3000" max="15000" step="250" value="7500" aria-label="Adjust estimated weekly revenue">
+                <div style="display: flex; justify-content: space-between; font-size: var(--font-size-xs); color: #64748b; margin-top: 4px;">
+                  <span>$3,000 / wk</span>
+                  <span>$9,000 / wk</span>
+                  <span>$15,000 / wk</span>
+                </div>
+              </div>
+
+              <div class="calc-metrics-grid">
+                <div class="calc-metric-box">
+                  <div class="calc-metric-label">Dispatch Fee (Post-Service)</div>
+                  <div id="metricFeeDisplay" class="calc-metric-num" style="color: #fbbf24;">$3,000</div>
+                </div>
+                <div class="calc-metric-box">
+                  <div class="calc-metric-label">Net Settlement to Carrier</div>
+                  <div id="metricNetDisplay" class="calc-metric-num" style="color: #34d399;">$4,500</div>
+                </div>
+              </div>
+
+              <div class="calc-callout">
+                <strong>Post-Service Billing Policy:</strong> Invoices are generated only after load delivery. Charges appear on bank statements as <strong>Extreme Dispatch Fee</strong>, securely processed by Stripe.
+              </div>
             </div>
-            <div class="badge-item">
-              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
-              <span>Fee Invoiced After Complete Service</span>
-            </div>
-            <div class="badge-item">
-              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
-              <span>Registered Wyoming LLC</span>
-            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Stats Ribbon -->
+    <section class="stats-ribbon" aria-label="Company Statistics">
+      <div class="container">
+        <div class="stats-ribbon-grid">
+          <div class="stat-item">
+            <div class="stat-value stat-value-accent">$0</div>
+            <div class="stat-label">Upfront Fee or Retainer</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-value">2023</div>
+            <div class="stat-label">Wyoming LLC Established</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-value stat-value-cyan">60+</div>
+            <div class="stat-label">US Motor Carriers Served</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-value">9</div>
+            <div class="stat-label">Dedicated Dispatch Specialists</div>
           </div>
         </div>
       </div>
     </section>
 
+    <!-- Equipment Specialization Matrix -->
+    <section class="section">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Equipment Categories We Dispatch</h2>
+          <p class="section-subtitle">Dedicated load matching tailored for standard commercial equipment configurations across the 48 contiguous states.</p>
+        </div>
+
+        <div class="equipment-grid">
+          <!-- Dry Van -->
+          <article class="equipment-card">
+            <div class="equipment-icon-wrap" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><path d="M20 8h-3V4H3c-1.1 0-2 .9-2 2v11h2c0 1.66 1.34 3 3 3s3-1.34 3-3h6c0 1.66 1.34 3 3 3s3-1.34 3-3h2v-5l-3-4zM6 18.5c-.83 0-1.5-.67-1.5-1.5s.67-1.5 1.5-1.5 1.5.67 1.5 1.5-.67 1.5-1.5 1.5zm13.5-9l1.96 2.5H17V9.5h2.5zm-1.5 9c-.83 0-1.5-.67-1.5-1.5s.67-1.5 1.5-1.5 1.5.67 1.5 1.5-.67 1.5-1.5 1.5z"/></svg>
+            </div>
+            <h3 class="equipment-title">Dry Van (53' &amp; 48')</h3>
+            <p style="color: var(--color-text-secondary); font-size: var(--font-size-sm); margin-bottom: var(--space-3);">
+              High-velocity palletized consumer goods, industrial freight, and retail distribution across major freight corridors.
+            </p>
+            <ul class="equipment-spec-list">
+              <li><span>Target Payload:</span> <strong>Up to 45,000 lbs</strong></li>
+              <li><span>Focus Lanes:</span> <strong>Midwest, Southeast, Northeast</strong></li>
+              <li><span>Average Transit:</span> <strong>Regional &amp; OTR</strong></li>
+            </ul>
+          </article>
+
+          <!-- Reefer -->
+          <article class="equipment-card">
+            <div class="equipment-icon-wrap" aria-hidden="true" style="background: #ecfdf5; color: #059669;">
+              <svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 100 20 10 10 0 000-20zm1 14.93V18h-2v-1.07A6.002 6.002 0 016 11h2a4 4 0 004 4 4 4 0 004-4h2a6.002 6.002 0 01-5 5.93zM12 6a4 4 0 00-4 4H6a6 6 0 016-6v2z"/></svg>
+            </div>
+            <h3 class="equipment-title">Reefer (Temperature-Controlled)</h3>
+            <p style="color: var(--color-text-secondary); font-size: var(--font-size-sm); margin-bottom: var(--space-3);">
+              High-paying produce, dairy, frozen proteins, and pharmaceuticals requiring continuous temperature monitoring.
+            </p>
+            <ul class="equipment-spec-list">
+              <li><span>Target Payload:</span> <strong>Up to 44,000 lbs</strong></li>
+              <li><span>Focus Lanes:</span> <strong>Coast-to-Coast &amp; Central</strong></li>
+              <li><span>Accessorials:</span> <strong>Pre-cooling, Lumper, Detention</strong></li>
+            </ul>
+          </article>
+
+          <!-- Flatbed & Step Deck -->
+          <article class="equipment-card">
+            <div class="equipment-icon-wrap" aria-hidden="true" style="background: #fffbeb; color: #d97706;">
+              <svg viewBox="0 0 24 24"><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-2 10h-4v4h-2v-4H7v-2h4V7h2v4h4v2z"/></svg>
+            </div>
+            <h3 class="equipment-title">Flatbed &amp; Step Deck</h3>
+            <p style="color: var(--color-text-secondary); font-size: var(--font-size-sm); margin-bottom: var(--space-3);">
+              Construction materials, steel coils, lumber, and specialized machinery requiring strap, tarp, and chain equipment.
+            </p>
+            <ul class="equipment-spec-list">
+              <li><span>Target Payload:</span> <strong>Up to 48,000 lbs</strong></li>
+              <li><span>Accessory Rates:</span> <strong>Tarp Fees ($50–$150)</strong></li>
+              <li><span>Loading:</span> <strong>Side &amp; Overhead Crane</strong></li>
+            </ul>
+          </article>
+
+          <!-- Power Only -->
+          <article class="equipment-card">
+            <div class="equipment-icon-wrap" aria-hidden="true" style="background: #f5f3ff; color: #7c3aed;">
+              <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z"/></svg>
+            </div>
+            <h3 class="equipment-title">Power Only / Drop &amp; Hook</h3>
+            <p style="color: var(--color-text-secondary); font-size: var(--font-size-sm); margin-bottom: var(--space-3);">
+              Tractor-only dispatch connecting with pre-loaded third-party trailers, fleet repositions, and private broker contracts.
+            </p>
+            <ul class="equipment-spec-list">
+              <li><span>Advantage:</span> <strong>Zero Trailer Maintenance</strong></li>
+              <li><span>Turnaround:</span> <strong>Minimal Dwell Time</strong></li>
+              <li><span>Lanes:</span> <strong>Dedicated Network Shuttles</strong></li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
     <!-- Core Services Overview -->
-    <section class="section" aria-labelledby="servicesHeading">
+    <section class="section section-alt" aria-labelledby="servicesHeading">
       <div class="container">
         <div class="section-header">
           <h2 id="servicesHeading" class="section-title">Core Dispatch Services</h2>
@@ -199,7 +353,7 @@
     </section>
 
     <!-- How the Engagement Works (Strict Sequence) -->
-    <section class="section section-alt" aria-labelledby="workflowHeading">
+    <section class="section" aria-labelledby="workflowHeading">
       <div class="container content-measure">
         <div class="section-header">
           <h2 id="workflowHeading" class="section-title">How the Engagement Works</h2>
@@ -267,8 +421,36 @@
       </div>
     </section>
 
+    <!-- Compliance & Financial Spotlight -->
+    <section class="container">
+      <div class="compliance-spotlight">
+        <h3>
+          <svg viewBox="0 0 24 24"><path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4zm-2 16l-4-4 1.41-1.41L10 14.17l6.59-6.59L18 9l-8 8z"/></svg>
+          <span>Verified Business Entity &amp; Compliance Standards</span>
+        </h3>
+        <p>
+          Tech Logistics LLC is an active commercial truck dispatch agency organized under the laws of the State of Wyoming, operating in full compliance with United States federal and state regulations. We collect our service fee strictly after service completion.
+        </p>
+
+        <div class="compliance-data-badges">
+          <div class="compliance-badge-item">
+            Entity: <strong>Tech Logistics LLC (Wyoming LLC)</strong>
+          </div>
+          <div class="compliance-badge-item">
+            Registered Address: <strong>30 North Gould Street, Ste 31304, Sheridan, WY 82801, US</strong>
+          </div>
+          <div class="compliance-badge-item">
+            Card Statement Descriptor: <strong>Extreme Dispatch Fee</strong>
+          </div>
+          <div class="compliance-badge-item">
+            Payment Processor: <strong>Stripe (PCI-DSS Level 1 Encrypted)</strong>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <!-- Who We Serve -->
-    <section class="section" aria-labelledby="audienceHeading">
+    <section class="section section-alt" aria-labelledby="audienceHeading">
       <div class="container">
         <div class="section-header">
           <h2 id="audienceHeading" class="section-title">Who Tech Logistics LLC Serves</h2>
@@ -301,7 +483,7 @@
     </section>
 
     <!-- Visible Contact Section on Homepage -->
-    <section class="section section-alt" aria-labelledby="homeContactHeading">
+    <section class="section" aria-labelledby="homeContactHeading">
       <div class="container content-measure">
         <div class="section-header">
           <h2 id="homeContactHeading" class="section-title">Contact Tech Logistics LLC Directly</h2>

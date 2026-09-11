@@ -144,4 +144,28 @@ document.addEventListener('DOMContentLoaded', function () {
       submitBtn.textContent = 'Message Submitted';
     }
   }
+
+  // 4. Interactive Take-Home Dispatch Estimator (Landing Page)
+  const revenueSlider = document.getElementById('revenueSlider');
+  const sliderGrossDisplay = document.getElementById('sliderGrossDisplay');
+  const metricFeeDisplay = document.getElementById('metricFeeDisplay');
+  const metricNetDisplay = document.getElementById('metricNetDisplay');
+
+  if (revenueSlider && sliderGrossDisplay && metricFeeDisplay && metricNetDisplay) {
+    const ratePercent = 0.40; // 40% fill-in rate from prompt token
+
+    function updateEstimator() {
+      const gross = parseFloat(revenueSlider.value);
+      const fee = gross * ratePercent;
+      const net = gross - fee;
+
+      sliderGrossDisplay.textContent = '$' + gross.toLocaleString('en-US');
+      metricFeeDisplay.textContent = '$' + Math.round(fee).toLocaleString('en-US');
+      metricNetDisplay.textContent = '$' + Math.round(net).toLocaleString('en-US');
+    }
+
+    revenueSlider.addEventListener('input', updateEstimator);
+    updateEstimator();
+  }
 });
+
