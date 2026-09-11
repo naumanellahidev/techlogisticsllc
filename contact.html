@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Customer Support &amp; Contact | Tech Logistics LLC</title>
+  <meta name="description" content="Contact customer support for Tech Logistics LLC. Assistance with truck dispatch, carrier onboarding, billing questions, and dispute resolution.">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Top Contact Bar -->
+  <aside class="header-top-bar" aria-label="Quick contact information">
+    <div class="container header-top-inner">
+      <div class="header-contact-items">
+        <span class="header-contact-item">Direct: <a href="tel:+14079559338">+1 (407) 955-9338</a></span>
+        <span class="header-contact-item">Alt: <a href="tel:+923331401384">+923331401384</a></span>
+        <span class="header-contact-item"><a href="mailto:support@techlogisticsllc.altrixcore.com">support@techlogisticsllc.altrixcore.com</a></span>
+      </div>
+      <div>
+        <span>Sheridan, Wyoming &bull; United States</span>
+      </div>
+    </div>
+  </aside>
+
+  <!-- Main Header -->
+  <header class="site-header">
+    <div class="container header-main-inner">
+      <a href="index.html" class="logo-area" aria-label="Tech Logistics LLC Home">
+        <div class="logo-mark" aria-hidden="true">TL</div>
+        <div>
+          <span class="logo-text">Tech Logistics LLC</span>
+          <span class="logo-subtitle">Truck Dispatch Services</span>
+        </div>
+      </a>
+
+      <button type="button" class="nav-toggle" aria-expanded="false" aria-controls="primaryNav" aria-label="Toggle navigation menu">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/></svg>
+        <span>Menu</span>
+      </button>
+
+      <nav class="primary-nav" id="primaryNav" aria-label="Main Navigation">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html" aria-current="page">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="mainContent">
+    <!-- Page Header Banner -->
+    <section class="section" style="padding: var(--space-8) 0; background-color: var(--color-surface-card); border-bottom: 1px solid var(--color-border);">
+      <div class="container content-measure">
+        <h1 class="section-title" style="font-size: var(--font-size-3xl);">Customer Support &amp; Contact</h1>
+        <p class="section-subtitle">
+          Direct communication channels for carrier partners, brokers, and billing inquiries with Tech Logistics LLC.
+        </p>
+      </div>
+    </section>
+
+    <!-- Contact Details & Form Section -->
+    <section class="section">
+      <div class="container">
+        <div class="services-grid" style="grid-template-columns: 1fr 1.3fr; align-items: start;">
+          
+          <!-- Contact Information Card -->
+          <div class="service-card">
+            <h2 class="service-card-title" style="font-size: var(--font-size-xl); margin-bottom: var(--space-4);">Direct Support Channels</h2>
+            
+            <p style="color: var(--color-text-secondary); margin-bottom: var(--space-6);">
+              Customers may contact Tech Logistics LLC through any of these channels for billing questions, refund requests, dispute resolutions, or carrier onboarding assistance.
+            </p>
+
+            <div style="display: flex; flex-direction: column; gap: var(--space-4);">
+              <div>
+                <strong style="color: var(--color-brand-dark);">Support Email:</strong><br>
+                <a href="mailto:support@techlogisticsllc.altrixcore.com" style="font-size: var(--font-size-md); font-weight: 600;">support@techlogisticsllc.altrixcore.com</a><br>
+                <span style="font-size: var(--font-size-xs); color: var(--color-text-secondary);">(Plain text: support@techlogisticsllc.altrixcore.com)</span>
+              </div>
+
+              <div>
+                <strong style="color: var(--color-brand-dark);">Primary Telephone:</strong><br>
+                <a href="tel:+14079559338" style="font-size: var(--font-size-md); font-weight: 600;">+1 (407) 955-9338</a>
+              </div>
+
+              <div>
+                <strong style="color: var(--color-brand-dark);">Direct / Alternate Line:</strong><br>
+                <a href="tel:+923331401384" style="font-size: var(--font-size-md); font-weight: 600;">+923331401384</a>
+              </div>
+
+              <div>
+                <strong style="color: var(--color-brand-dark);">Registered Postal Address:</strong><br>
+                <address style="font-style: normal; line-height: var(--line-height-normal); color: var(--color-text-primary); margin-top: var(--space-1);">
+                  Tech Logistics LLC<br>
+                  30 North Gould Street, Ste 31304<br>
+                  Sheridan, WY 82801, US
+                </address>
+              </div>
+
+              <div style="padding-top: var(--space-4); border-top: 1px solid var(--color-border-subtle);">
+                <strong style="color: var(--color-brand-dark);">Business Hours:</strong><br>
+                <span>Monday – Friday: <strong>{{BUSINESS_HOURS}}</strong> (<strong>{{TIMEZONE}}</strong>)</span>
+              </div>
+
+              <div>
+                <strong style="color: var(--color-brand-dark);">Expected Response Time:</strong><br>
+                <span>All inquiries are answered within <strong>{{RESPONSE_TIME}}</strong>.</span>
+              </div>
+
+              <div style="padding-top: var(--space-4); border-top: 1px solid var(--color-border-subtle);">
+                <strong style="color: var(--color-brand-dark);">Bank Statement Descriptor:</strong><br>
+                <span>Charges appear as: <strong>Extreme Dispatch Fee</strong></span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Interactive Contact Form -->
+          <div class="service-card" style="padding: var(--space-8);">
+            <h2 class="service-card-title" style="font-size: var(--font-size-xl); margin-bottom: var(--space-2);">Send Customer Support Inquiry</h2>
+            <p style="color: var(--color-text-secondary); margin-bottom: var(--space-6);">
+              Submit your inquiry below. Our dispatch and accounting team will review and respond promptly.
+            </p>
+
+            <!-- Success Confirmation Notice -->
+            <div id="formSuccessMessage" class="form-feedback-success" role="alert">
+              <h3 style="color: var(--color-success); font-size: var(--font-size-lg); margin-bottom: var(--space-2);">Message Sent Successfully</h3>
+              <p style="color: var(--color-text-primary); margin: 0;">
+                Thank you for contacting Tech Logistics LLC. Your message has been received, and a representative will follow up within {{RESPONSE_TIME}}.
+              </p>
+            </div>
+
+            <!-- Form -->
+            <form id="contactForm" novalidate>
+              <div class="form-grid">
+                <div class="form-group">
+                  <label for="fullName" class="form-label">Full Name <span class="req">*</span></label>
+                  <input type="text" id="fullName" name="name" class="form-control" placeholder="John Doe" required>
+                  <div class="field-error">Please enter your full name.</div>
+                </div>
+
+                <div class="form-group">
+                  <label for="emailAddress" class="form-label">Business Email Address <span class="req">*</span></label>
+                  <input type="email" id="emailAddress" name="email" class="form-control" placeholder="carrier@domain.com" required>
+                  <div class="field-error">Please enter a valid email address.</div>
+                </div>
+
+                <div class="form-group">
+                  <label for="phoneNumber" class="form-label">Phone Number <span class="req">*</span></label>
+                  <input type="tel" id="phoneNumber" name="phone" class="form-control" placeholder="+1 (555) 000-0000" required>
+                  <div class="field-error">Please enter your phone number.</div>
+                </div>
+
+                <div class="form-group">
+                  <label for="companyName" class="form-label">Company / Carrier Name <span class="req">*</span></label>
+                  <input type="text" id="companyName" name="company" class="form-control" placeholder="Apex Hauling LLC" required>
+                  <div class="field-error">Please enter your company or carrier name.</div>
+                </div>
+
+                <div class="form-group form-group-full">
+                  <label for="mcNumber" class="form-label">MC / USDOT Number (Optional)</label>
+                  <input type="text" id="mcNumber" name="mc_number" class="form-control" placeholder="MC-123456 or USDOT-1234567">
+                </div>
+
+                <div class="form-group form-group-full">
+                  <label for="inquirySubject" class="form-label">Inquiry Subject <span class="req">*</span></label>
+                  <select id="inquirySubject" name="subject" class="form-control" required>
+                    <option value="">Select inquiry topic...</option>
+                    <option value="New Carrier Onboarding">New Carrier Onboarding &amp; Setup</option>
+                    <option value="Dispatch & Load Support">Dispatch &amp; Load Inquiries</option>
+                    <option value="Billing & Extreme Dispatch Fee">Billing Question / Extreme Dispatch Fee</option>
+                    <option value="Refund Request">Refund Request / Charge Clarification</option>
+                    <option value="Other Support Inquiry">Other Inquiries</option>
+                  </select>
+                  <div class="field-error">Please select an inquiry topic.</div>
+                </div>
+
+                <div class="form-group form-group-full">
+                  <label for="inquiryMessage" class="form-label">Message <span class="req">*</span></label>
+                  <textarea id="inquiryMessage" name="message" class="form-control" placeholder="Please describe how we can assist you..." required></textarea>
+                  <div class="field-error">Please enter your message.</div>
+                </div>
+
+                <div class="form-group-full">
+                  <button type="submit" id="submitBtn" class="btn btn-primary" style="width: 100%;">Submit Support Inquiry</button>
+                  <p style="font-size: var(--font-size-xs); color: var(--color-text-secondary); margin-top: var(--space-2); text-align: center;">
+                    By submitting, you agree to our <a href="terms.html">Terms and Conditions</a> and <a href="privacy.html">Privacy Policy</a>.
+                  </p>
+                </div>
+              </div>
+            </form>
+          </div>
+
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Site Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-company-col">
+          <h3>Tech Logistics LLC</h3>
+          <p>
+            Tech Logistics LLC provides professional truck dispatch services for commercial trucking companies and owner-operators across the United States. We charge our service fee only after services are completely fulfilled.
+          </p>
+          <address class="footer-address-block"><strong>Registered Address:</strong><br>30 North Gould Street, Ste 31304, Sheridan, WY 82801, US</address>
+        </div>
+
+        <div class="footer-col">
+          <h4>Navigation</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="services.html">Services &amp; Pricing</a></li>
+            <li><a href="about.html">About Tech Logistics LLC</a></li>
+            <li><a href="contact.html">Customer Support</a></li>
+            <li><a href="faq.html">Frequently Asked Questions</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Compliance &amp; Legal</h4>
+          <ul>
+            <li><a href="terms.html">Terms and Conditions</a></li>
+            <li><a href="refund-policy.html">Refund Policy</a></li>
+            <li><a href="privacy.html">Privacy Policy</a></li>
+            <li><a href="disclaimer.html">Statutory Disclaimer</a></li>
+          </ul>
+          <div style="margin-top: var(--space-4);">
+            <p><strong>Direct Phone:</strong> <a href="tel:+14079559338">+1 (407) 955-9338</a></p>
+            <p><strong>Alt Phone:</strong> <a href="tel:+923331401384">+923331401384</a></p>
+            <p><strong>Email:</strong> <a href="mailto:support@techlogisticsllc.altrixcore.com">support@techlogisticsllc.altrixcore.com</a></p>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; <span class="current-year">2026</span> Tech Logistics LLC. All rights reserved. Operating under US laws and regulations.</p>
+        <p>Card and bank statement charges appear as: <strong>Extreme Dispatch Fee</strong></p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
