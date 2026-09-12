@@ -6,7 +6,7 @@
   <title>Services and Pricing | Tech Logistics LLC</title>
   <meta name="description" content="Comprehensive truck dispatch services, transparent fee structure, and billing descriptor explanation for Tech Logistics LLC. No upfront charges.">
   <link rel="icon" type="image/svg+xml" href="favicon.svg">
-  <link rel="stylesheet" href="styles.css?v=3.0">
+  <link rel="stylesheet" href="styles.css?v=3.1">
 </head>
 <body>
 
@@ -52,11 +52,15 @@
   </header>
 
   <main id="mainContent">
-    <!-- Page Header Banner -->
-    <section class="section" style="padding: var(--space-8) 0; background-color: var(--color-surface-card); border-bottom: 1px solid var(--color-border);">
-      <div class="container content-measure">
-        <h1 class="section-title" style="font-size: var(--font-size-3xl);">Dispatch Services &amp; Fee Structure</h1>
-        <p class="section-subtitle">
+    <!-- Executive Page Hero Banner -->
+    <section class="page-hero-executive" aria-labelledby="servicesHeroHeading">
+      <div class="container">
+        <div class="live-pill-badge">
+          <span class="pulse-radar" aria-hidden="true"></span>
+          <span>Transparent Post-Delivery Invoicing &bull; Zero Upfront Retainers</span>
+        </div>
+        <h1 id="servicesHeroHeading" class="page-hero-title">Dispatch Services &amp; Fee Structure</h1>
+        <p class="page-hero-lead">
           Detailed operational scope, deliverable specifications, client responsibilities, and clear pricing terms for Tech Logistics LLC commercial dispatch clients.
         </p>
       </div>
@@ -64,8 +68,12 @@
 
     <!-- Services Detailed Breakdown -->
     <section class="section">
-      <div class="container content-measure">
+      <div class="container">
         <div class="section-header">
+          <div class="live-pill-badge">
+            <span class="pulse-radar" aria-hidden="true"></span>
+            <span>Comprehensive Back-Office Deliverables</span>
+          </div>
           <h2 class="section-title">Detailed Service Deliverables</h2>
           <p class="section-subtitle">Each service is executed in strict accordance with the signed carrier dispatch agreement.</p>
         </div>
@@ -73,50 +81,74 @@
         <div style="display: flex; flex-direction: column; gap: var(--space-8);">
           <!-- Service 1 -->
           <article id="load-sourcing" class="service-card">
+            <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: var(--space-3);">
+              <span class="live-pill-badge" style="margin-bottom: 0; font-size: 11px; padding: 2px 8px;">Scope Item 01</span>
+              <span style="color: #60a5fa; font-size: var(--font-size-xs); font-weight: 700;">Freight Matching</span>
+            </div>
             <h3 class="service-card-title" style="font-size: var(--font-size-xl);">1. Load Sourcing &amp; Booking</h3>
-            <p><strong>What is included:</strong> Tech Logistics LLC continuously monitors national freight platforms, load boards (including DAT and Truckstop networks), and direct freight broker contacts. We evaluate load origin, destination, freight density, weight, commodity, and equipment compatibility (Dry Van, Reefer, Flatbed, Step Deck) to match available capacity with the most profitable freight.</p>
-            <p><strong>What the client provides:</strong> Current truck location, destination preference, equipment specifications, maximum payload weight, and driver availability dates.</p>
-            <p><strong>The deliverable:</strong> Screened freight options presented to the carrier for verbal or electronic approval, followed by an executed Rate Confirmation from the broker upon carrier acceptance.</p>
+            <p style="margin-bottom: var(--space-3);"><strong style="color: #ffffff;">What is included:</strong> Tech Logistics LLC continuously monitors national freight platforms, load boards (including DAT and Truckstop networks), and direct freight broker contacts. We evaluate load origin, destination, freight density, weight, commodity, and equipment compatibility (Dry Van, Reefer, Flatbed, Step Deck) to match available capacity with the most profitable freight.</p>
+            <p style="margin-bottom: var(--space-3);"><strong style="color: #ffffff;">What the client provides:</strong> Current truck location, destination preference, equipment specifications, maximum payload weight, and driver availability dates.</p>
+            <p><strong style="color: #ffffff;">The deliverable:</strong> Screened freight options presented to the carrier for verbal or electronic approval, followed by an executed Rate Confirmation from the broker upon carrier acceptance.</p>
           </article>
 
           <!-- Service 2 -->
           <article id="broker-negotiation" class="service-card">
+            <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: var(--space-3);">
+              <span class="live-pill-badge" style="margin-bottom: 0; font-size: 11px; padding: 2px 8px;">Scope Item 02</span>
+              <span style="color: #fbbf24; font-size: var(--font-size-xs); font-weight: 700;">Yield Maximization</span>
+            </div>
             <h3 class="service-card-title" style="font-size: var(--font-size-xl);">2. Broker Rate Negotiation</h3>
-            <p><strong>What is included:</strong> Direct, aggressive price negotiation with freight brokers to secure the top market rate per mile for each lane. We negotiate detention pay ($50–$75/hr after 2 hours), layover rates, extra stop fees, TONU (Truck Ordered Not Used) clauses, and quick-pay terms on behalf of the motor carrier.</p>
-            <p><strong>What the client provides:</strong> Minimum acceptable rate per mile thresholds and any operational constraints (e.g., toll avoidance preferences or specific fuel budget parameters).</p>
-            <p><strong>The deliverable:</strong> Binding Rate Confirmation reflecting the highest negotiated gross revenue, signed and confirmed by both broker and carrier.</p>
+            <p style="margin-bottom: var(--space-3);"><strong style="color: #ffffff;">What is included:</strong> Direct, aggressive price negotiation with freight brokers to secure the top market rate per mile for each lane. We negotiate detention pay ($50–$75/hr after 2 hours), layover rates, extra stop fees, TONU (Truck Ordered Not Used) clauses, and quick-pay terms on behalf of the motor carrier.</p>
+            <p style="margin-bottom: var(--space-3);"><strong style="color: #ffffff;">What the client provides:</strong> Minimum acceptable rate per mile thresholds and any operational constraints (e.g., toll avoidance preferences or specific fuel budget parameters).</p>
+            <p><strong style="color: #ffffff;">The deliverable:</strong> Binding Rate Confirmation reflecting the highest negotiated gross revenue, signed and confirmed by both broker and carrier.</p>
           </article>
 
           <!-- Service 3 -->
           <article id="carrier-packets" class="service-card">
+            <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: var(--space-3);">
+              <span class="live-pill-badge" style="margin-bottom: 0; font-size: 11px; padding: 2px 8px;">Scope Item 03</span>
+              <span style="color: #34d399; font-size: var(--font-size-xs); font-weight: 700;">Credential Compliance</span>
+            </div>
             <h3 class="service-card-title" style="font-size: var(--font-size-xl);">3. Carrier Packet &amp; Setup Paperwork</h3>
-            <p><strong>What is included:</strong> Preparation, completion, and electronic submission of broker-carrier setup packets. We verify broker creditworthiness and legitimate operating authority, and coordinate the transmission of Certificate of Insurance (COI) with broker as certificate holder, Form W-9, Notice of Assignment (NOA) for factoring, and FMCSA safety credentials.</p>
-            <p><strong>What the client provides:</strong> Active MC/DOT authority certificate, valid Certificate of Insurance with adequate liability and cargo coverage ($1,000,000 auto liability / $100,000 cargo standard), W-9 form, and factoring company Notice of Assignment (if factoring).</p>
-            <p><strong>The deliverable:</strong> Completed, approved broker-carrier profiles granting immediate loading eligibility across major US brokerage networks.</p>
+            <p style="margin-bottom: var(--space-3);"><strong style="color: #ffffff;">What is included:</strong> Preparation, completion, and electronic submission of broker-carrier setup packets. We verify broker creditworthiness and legitimate operating authority, and coordinate the transmission of Certificate of Insurance (COI) with broker as certificate holder, Form W-9, Notice of Assignment (NOA) for factoring, and FMCSA safety credentials.</p>
+            <p style="margin-bottom: var(--space-3);"><strong style="color: #ffffff;">What the client provides:</strong> Active MC/DOT authority certificate, valid Certificate of Insurance with adequate liability and cargo coverage ($1,000,000 auto liability / $100,000 cargo standard), W-9 form, and factoring company Notice of Assignment (if factoring).</p>
+            <p><strong style="color: #ffffff;">The deliverable:</strong> Completed, approved broker-carrier profiles granting immediate loading eligibility across major US brokerage networks.</p>
           </article>
 
           <!-- Service 4 -->
           <article id="scheduling" class="service-card">
+            <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: var(--space-3);">
+              <span class="live-pill-badge" style="margin-bottom: 0; font-size: 11px; padding: 2px 8px;">Scope Item 04</span>
+              <span style="color: #a855f7; font-size: var(--font-size-xs); font-weight: 700;">HOS &amp; Routing</span>
+            </div>
             <h3 class="service-card-title" style="font-size: var(--font-size-xl);">4. Dispatch Scheduling &amp; Route Coordination</h3>
-            <p><strong>What is included:</strong> Full coordination of shipper pickup times and receiver delivery appointments. Route planning that accounts for legal FMCSA Hours of Service (HOS) limits, designated truck routes, weather conditions, and timely shipper/receiver check-ins.</p>
-            <p><strong>What the client provides:</strong> Real-time transit updates, estimated time of arrival (ETA), and prompt notice of any mechanical delays or transit interruptions.</p>
-            <p><strong>The deliverable:</strong> Detailed dispatch instructions containing appointment confirmation numbers, shipper/receiver addresses, facility contact names, special handling instructions, and appointment timelines.</p>
+            <p style="margin-bottom: var(--space-3);"><strong style="color: #ffffff;">What is included:</strong> Full coordination of shipper pickup times and receiver delivery appointments. Route planning that accounts for legal FMCSA Hours of Service (HOS) limits, designated truck routes, weather conditions, and timely shipper/receiver check-ins.</p>
+            <p style="margin-bottom: var(--space-3);"><strong style="color: #ffffff;">What the client provides:</strong> Real-time transit updates, estimated time of arrival (ETA), and prompt notice of any mechanical delays or transit interruptions.</p>
+            <p><strong style="color: #ffffff;">The deliverable:</strong> Detailed dispatch instructions containing appointment confirmation numbers, shipper/receiver addresses, facility contact names, special handling instructions, and appointment timelines.</p>
           </article>
 
           <!-- Service 5 -->
           <article id="invoicing" class="service-card">
+            <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: var(--space-3);">
+              <span class="live-pill-badge" style="margin-bottom: 0; font-size: 11px; padding: 2px 8px;">Scope Item 05</span>
+              <span style="color: #38bdf8; font-size: var(--font-size-xs); font-weight: 700;">Factoring &amp; BOL</span>
+            </div>
             <h3 class="service-card-title" style="font-size: var(--font-size-xl);">5. Document Handling (Rate Confirmations, BOL, Invoicing Support)</h3>
-            <p><strong>What is included:</strong> Systematic collection, indexing, and archiving of all load transaction records. We review signed Bills of Lading (BOL), Proof of Delivery (POD) documents, lumper receipts, scale tickets, and rate confirmations. We assemble complete billing packets for client factoring company submission or direct broker invoicing.</p>
-            <p><strong>What the client provides:</strong> Legible digital copies or photos of the signed BOL/POD immediately following delivery completion.</p>
-            <p><strong>The deliverable:</strong> An organized, verified invoice packet ready for funding or direct billing, ensuring rapid payment to the carrier.</p>
+            <p style="margin-bottom: var(--space-3);"><strong style="color: #ffffff;">What is included:</strong> Systematic collection, indexing, and archiving of all load transaction records. We review signed Bills of Lading (BOL), Proof of Delivery (POD) documents, lumper receipts, scale tickets, and rate confirmations. We assemble complete billing packets for client factoring company submission or direct broker invoicing.</p>
+            <p style="margin-bottom: var(--space-3);"><strong style="color: #ffffff;">What the client provides:</strong> Legible digital copies or photos of the signed BOL/POD immediately following delivery completion.</p>
+            <p><strong style="color: #ffffff;">The deliverable:</strong> An organized, verified invoice packet ready for funding or direct billing, ensuring rapid payment to the carrier.</p>
           </article>
 
           <!-- Service 6 -->
           <article id="back-office" class="service-card">
+            <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: var(--space-3);">
+              <span class="live-pill-badge" style="margin-bottom: 0; font-size: 11px; padding: 2px 8px;">Scope Item 06</span>
+              <span style="color: #f43f5e; font-size: var(--font-size-xs); font-weight: 700;">Detention Advocate</span>
+            </div>
             <h3 class="service-card-title" style="font-size: var(--font-size-xl);">6. Back-Office Support &amp; Issue Resolution</h3>
-            <p><strong>What is included:</strong> Continuous operational support during load transit. We advocate for the carrier in disputes regarding detention compensation, lumper reimbursements, loading delays, appointment rescheduling, and post-delivery claims handling.</p>
-            <p><strong>What the client provides:</strong> Timely notification of facility delays, timestamps for check-in and check-out, and copies of any accessorial receipts.</p>
-            <p><strong>The deliverable:</strong> Approved accessorial adjustments on revised rate confirmations, ensuring drivers are fairly compensated for delays and unexpected operational expenses.</p>
+            <p style="margin-bottom: var(--space-3);"><strong style="color: #ffffff;">What is included:</strong> Continuous operational support during load transit. We advocate for the carrier in disputes regarding detention compensation, lumper reimbursements, loading delays, appointment rescheduling, and post-delivery claims handling.</p>
+            <p style="margin-bottom: var(--space-3);"><strong style="color: #ffffff;">What the client provides:</strong> Timely notification of facility delays, timestamps for check-in and check-out, and copies of any accessorial receipts.</p>
+            <p><strong style="color: #ffffff;">The deliverable:</strong> Approved accessorial adjustments on revised rate confirmations, ensuring drivers are fairly compensated for delays and unexpected operational expenses.</p>
           </article>
         </div>
       </div>
@@ -124,17 +156,96 @@
 
     <!-- Pricing Section -->
     <section class="section section-alt" id="pricing">
-      <div class="container content-measure">
+      <div class="container">
         <div class="section-header">
+          <div class="live-pill-badge">
+            <span class="pulse-radar" aria-hidden="true"></span>
+            <span>Zero Upfront Risk</span>
+          </div>
           <h2 class="section-title">Pricing &amp; Fee Structure</h2>
           <p class="section-subtitle">Transparent, load-based fees with zero upfront costs. Invoiced strictly after services are delivered.</p>
         </div>
 
-        <div class="notice-box notice-box-accent">
-          <h3>No Upfront Charges Guarantee</h3>
+        <div class="notice-box notice-box-accent" style="margin-bottom: var(--space-8);">
+          <div style="display: flex; align-items: center; gap: 8px; margin-bottom: 6px;">
+            <svg style="width: 20px; height: 20px; fill: var(--color-brand-accent);" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-2h2v2zm0-4h-2V7h2v6z"/></svg>
+            <h3 style="margin-bottom: 0;">No Upfront Charges Guarantee</h3>
+          </div>
           <p>
             Tech Logistics LLC does not charge any upfront deposits, onboarding fees, or advance retainers. We provide the complete dispatch service first. Invoices are generated and collected only after the loads booked under your service agreement have been delivered.
           </p>
+        </div>
+
+        <!-- Executive Pricing Cards Row -->
+        <div class="pricing-cards-row">
+          <!-- Card 1: Percentage Plan -->
+          <article class="pricing-card-elite pricing-card-featured">
+            <div class="pricing-featured-badge">Most Popular For OTR</div>
+            <h3 style="font-size: var(--font-size-lg); font-weight: 800; color: #ffffff;">Percentage Plan</h3>
+            <p style="color: #94a3b8; font-size: var(--font-size-sm);">Best for long-haul carriers and owner-operators wanting performance-aligned fees.</p>
+            
+            <div class="pricing-card-rate">7%<span style="font-size: var(--font-size-base); color: #94a3b8; font-weight: 500;"> / gross pay</span></div>
+            <div style="font-size: var(--font-size-xs); color: #34d399; font-weight: 700;">$0 Upfront &bull; Billed Weekly in Arrears</div>
+
+            <ul class="pricing-card-features">
+              <li>
+                <svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+                <span>Full Load Sourcing &amp; Broker Rate Negotiations</span>
+              </li>
+              <li>
+                <svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+                <span>Carrier Packet &amp; COI Distribution to Brokers</span>
+              </li>
+              <li>
+                <svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+                <span>Detention ($50–$75/hr) &amp; Layover Enforcement</span>
+              </li>
+              <li>
+                <svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+                <span>Factoring Packet &amp; BOL/POD Assembly</span>
+              </li>
+              <li>
+                <svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+                <span>Statement Descriptor: <strong>Extreme Dispatch Fee</strong></span>
+              </li>
+            </ul>
+
+            <a href="contact.html" class="btn btn-primary" style="width: 100%;">Select Percentage Plan</a>
+          </article>
+
+          <!-- Card 2: Flat Weekly Plan -->
+          <article class="pricing-card-elite">
+            <h3 style="font-size: var(--font-size-lg); font-weight: 800; color: #ffffff;">Flat Weekly Plan</h3>
+            <p style="color: #94a3b8; font-size: var(--font-size-sm);">Ideal for dedicated regional fleets running predictable, high-frequency lane turns.</p>
+            
+            <div class="pricing-card-rate">$250<span style="font-size: var(--font-size-base); color: #94a3b8; font-weight: 500;"> / truck / week</span></div>
+            <div style="font-size: var(--font-size-xs); color: #34d399; font-weight: 700;">$0 Upfront &bull; Invoiced Post-Delivery</div>
+
+            <ul class="pricing-card-features">
+              <li>
+                <svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+                <span>Dedicated Single Dispatch Coordinator</span>
+              </li>
+              <li>
+                <svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+                <span>Unlimited Loads Sourced &amp; Scheduled</span>
+              </li>
+              <li>
+                <svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+                <span>No Long-Term Contracts (Cancel Anytime)</span>
+              </li>
+              <li>
+                <svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+                <span>Consolidated Weekly Invoicing via Stripe</span>
+              </li>
+              <li>
+                <svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+                <span>Statement Descriptor: <strong>Extreme Dispatch Fee</strong></span>
+              </li>
+            </ul>
+
+            <a href="contact.html" class="btn btn-outline-white" style="width: 100%;">Select Flat Weekly Plan</a>
+          </article>
         </div>
 
         <div class="pricing-table-container">
@@ -150,25 +261,25 @@
             <tbody>
               <tr>
                 <th scope="row">Percentage of Gross Revenue Plan</th>
-                <td><span class="rate-highlight">40%</span> of gross load revenue</td>
+                <td><span class="rate-highlight">7%</span> of gross load revenue</td>
                 <td>Invoiced after load completion</td>
                 <td>Standard per-load agreement</td>
               </tr>
               <tr>
                 <th scope="row">Flat Weekly Dispatch Option</th>
-                <td><span class="rate-highlight">30%</span> flat weekly option (if offered)</td>
+                <td><span class="rate-highlight">$250</span> flat weekly per truck</td>
                 <td>Invoiced weekly in arrears</td>
                 <td>Based on dedicated weekly service agreement</td>
               </tr>
               <tr>
                 <th scope="row">Minimum Commitment</th>
-                <td><strong>None (No Long-Term Contract)</strong></td>
+                <td><strong style="color: #ffffff;">None (No Long-Term Contract)</strong></td>
                 <td>N/A</td>
                 <td>Cancel at any time with standard notice</td>
               </tr>
               <tr>
                 <th scope="row">Account Setup &amp; Onboarding Fee</th>
-                <td><strong>None ($0 Setup Fee)</strong></td>
+                <td><strong style="color: #34d399;">None ($0 Setup Fee)</strong></td>
                 <td>N/A</td>
                 <td>Zero upfront cost to join</td>
               </tr>
@@ -176,7 +287,7 @@
           </table>
         </div>
 
-        <p style="font-size: var(--font-size-sm); color: var(--color-text-secondary); margin-top: var(--space-4);">
+        <p style="font-size: var(--font-size-sm); color: #94a3b8; margin-top: var(--space-4);">
           * Note: All dispatch service fees are established individually per client within a signed, legally binding service agreement. The final billed amounts vary between clients and between billing periods because fees are calculated strictly from the specific loads sourced, negotiated, and completed under each client's individual agreement.
         </p>
 
@@ -186,10 +297,10 @@
           <p>
             When Tech Logistics LLC charges your credit card, debit card, or bank account for completed dispatch services, the charge will appear on your cardholder and banking statements under the exact descriptor:
           </p>
-          <p style="font-size: var(--font-size-lg); font-weight: 700; color: var(--color-brand-dark); padding: var(--space-3); background-color: #ffffff; border: 1px solid var(--color-border); border-radius: var(--border-radius); text-align: center;">
+          <p style="font-size: 1.5rem; font-weight: 800; color: #fbbf24; padding: var(--space-4); background-color: #080e1a; border: 1px solid rgba(255, 255, 255, 0.15); border-radius: var(--radius-sm); text-align: center; font-family: var(--font-mono); letter-spacing: 0.5px;">
             Extreme Dispatch Fee
           </p>
-          <p>
+          <p style="margin-top: var(--space-4);">
             <strong>Why the amount varies:</strong> Because Tech Logistics LLC bills only after dispatch services are completely rendered, the charge amount is calculated directly from the agreed percentage or load rate outlined in each client's individual service agreement. A client running four loads in a week will have a different invoice total than a client running two loads.
           </p>
           <p>
@@ -202,7 +313,7 @@
 
         <div style="text-align: center; margin-top: var(--space-8);">
           <a href="contact.html" class="btn btn-primary">Start Onboarding with Tech Logistics LLC</a>
-          <a href="refund-policy.html" class="btn btn-secondary" style="margin-left: var(--space-3);">Review Refund Policy</a>
+          <a href="refund-policy.html" class="btn btn-outline-white" style="margin-left: var(--space-3);">Review Refund Policy</a>
         </div>
       </div>
     </section>
@@ -218,6 +329,12 @@
             Tech Logistics LLC provides professional truck dispatch services for commercial trucking companies and owner-operators across the United States. We charge our service fee only after services are completely fulfilled.
           </p>
           <address class="footer-address-block"><strong>Registered Address:</strong><br>30 North Gould Street, Ste 31304, Sheridan, WY 82801, US</address>
+          <div style="margin-top: var(--space-4);">
+            <span class="live-pill-badge" style="font-size: 11px; padding: 3px 10px; margin-bottom: 0;">
+              <span class="pulse-radar" style="width: 6px; height: 6px;" aria-hidden="true"></span>
+              <span>US Commercial Freight Desks Operational</span>
+            </span>
+          </div>
         </div>
 
         <div class="footer-col">

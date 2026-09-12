@@ -6,7 +6,7 @@
   <title>Tech Logistics LLC | Truck Dispatch Services for US Carriers</title>
   <meta name="description" content="Tech Logistics LLC provides professional truck dispatch services for trucking companies and owner-operators across the United States with no upfront charges.">
   <link rel="icon" type="image/svg+xml" href="favicon.svg">
-  <link rel="stylesheet" href="styles.css?v=3.0">
+  <link rel="stylesheet" href="styles.css?v=3.1">
   
   <!-- JSON-LD LocalBusiness Structured Data for Compliance & Search Verification -->
   <script type="application/ld+json">
@@ -208,7 +208,7 @@
             <div class="stat-label">Active US Motor Carriers</div>
           </div>
           <div class="stat-item">
-            <div class="stat-value">9</div>
+            <div class="stat-value" style="color: #34d399;">9</div>
             <div class="stat-label">Dedicated Dispatch Specialists</div>
           </div>
         </div>
@@ -219,7 +219,10 @@
     <section class="section">
       <div class="container">
         <div class="section-header">
-          <div class="section-eyebrow">Fleet Capacity &amp; Coverage</div>
+          <div class="live-pill-badge">
+            <span class="pulse-radar" aria-hidden="true"></span>
+            <span>Commercial Fleet Capacity</span>
+          </div>
           <h2 class="section-title">Equipment Categories We Dispatch</h2>
           <p class="section-subtitle">Dedicated freight matching tailored for standard commercial trailer types across regional and national lanes.</p>
         </div>
@@ -227,13 +230,16 @@
         <div class="equipment-grid">
           <!-- Dry Van -->
           <article class="equipment-card">
-            <div class="equipment-icon-wrap" aria-hidden="true" style="background: #eff6ff; color: #1d4ed8;">
+            <div class="equipment-icon-wrap" aria-hidden="true" style="background: rgba(37, 99, 235, 0.15); color: #60a5fa; border: 1px solid rgba(59, 130, 246, 0.3);">
               <svg viewBox="0 0 24 24"><path d="M20 8h-3V4H3c-1.1 0-2 .9-2 2v11h2c0 1.66 1.34 3 3 3s3-1.34 3-3h6c0 1.66 1.34 3 3 3s3-1.34 3-3h2v-5l-3-4zM6 18.5c-.83 0-1.5-.67-1.5-1.5s.67-1.5 1.5-1.5 1.5.67 1.5 1.5-.67 1.5-1.5 1.5zm13.5-9l1.96 2.5H17V9.5h2.5zm-1.5 9c-.83 0-1.5-.67-1.5-1.5s.67-1.5 1.5-1.5 1.5.67 1.5 1.5-.67 1.5-1.5 1.5z"/></svg>
             </div>
             <h3 class="equipment-title">Dry Van (53' &amp; 48')</h3>
-            <p style="color: var(--color-slate-600); font-size: var(--font-size-sm); margin-bottom: var(--space-3);">
+            <p style="color: #94a3b8; font-size: var(--font-size-sm); margin-bottom: var(--space-3);">
               High-velocity palletized consumer freight, manufacturing parts, and retail distribution across major freight hubs.
             </p>
+            <div style="background: rgba(255, 255, 255, 0.08); border-radius: 9999px; height: 5px; margin: 10px 0 14px 0; overflow: hidden;">
+              <div style="background: linear-gradient(90deg, #3b82f6, #60a5fa); width: 92%; height: 100%;"></div>
+            </div>
             <ul class="equipment-spec-list">
               <li><span>Target Payload:</span> <strong>Up to 45,000 lbs</strong></li>
               <li><span>Key Lanes:</span> <strong>Midwest, Southeast, Northeast</strong></li>
@@ -243,13 +249,16 @@
 
           <!-- Reefer -->
           <article class="equipment-card">
-            <div class="equipment-icon-wrap" aria-hidden="true" style="background: #ecfdf5; color: #059669;">
+            <div class="equipment-icon-wrap" aria-hidden="true" style="background: rgba(16, 185, 129, 0.15); color: #34d399; border: 1px solid rgba(16, 185, 129, 0.3);">
               <svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 100 20 10 10 0 000-20zm1 14.93V18h-2v-1.07A6.002 6.002 0 016 11h2a4 4 0 004 4 4 4 0 004-4h2a6.002 6.002 0 01-5 5.93zM12 6a4 4 0 00-4 4H6a6 6 0 016-6v2z"/></svg>
             </div>
             <h3 class="equipment-title">Reefer (Temperature-Controlled)</h3>
-            <p style="color: var(--color-slate-600); font-size: var(--font-size-sm); margin-bottom: var(--space-3);">
+            <p style="color: #94a3b8; font-size: var(--font-size-sm); margin-bottom: var(--space-3);">
               High-yielding perishable produce, fresh meats, dairy products, and pharmaceuticals requiring continuous temperature monitoring.
             </p>
+            <div style="background: rgba(255, 255, 255, 0.08); border-radius: 9999px; height: 5px; margin: 10px 0 14px 0; overflow: hidden;">
+              <div style="background: linear-gradient(90deg, #10b981, #34d399); width: 95%; height: 100%;"></div>
+            </div>
             <ul class="equipment-spec-list">
               <li><span>Target Payload:</span> <strong>Up to 44,000 lbs</strong></li>
               <li><span>Key Lanes:</span> <strong>West Coast to East Coast, Central</strong></li>
@@ -259,13 +268,16 @@
 
           <!-- Flatbed & Step Deck -->
           <article class="equipment-card">
-            <div class="equipment-icon-wrap" aria-hidden="true" style="background: #fffbeb; color: #d97706;">
+            <div class="equipment-icon-wrap" aria-hidden="true" style="background: rgba(245, 158, 11, 0.15); color: #fbbf24; border: 1px solid rgba(245, 158, 11, 0.3);">
               <svg viewBox="0 0 24 24"><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-2 10h-4v4h-2v-4H7v-2h4V7h2v4h4v2z"/></svg>
             </div>
             <h3 class="equipment-title">Flatbed &amp; Step Deck</h3>
-            <p style="color: var(--color-slate-600); font-size: var(--font-size-sm); margin-bottom: var(--space-3);">
+            <p style="color: #94a3b8; font-size: var(--font-size-sm); margin-bottom: var(--space-3);">
               Construction materials, steel products, lumber, and heavy industrial machinery requiring strap, chain, or tarp equipment.
             </p>
+            <div style="background: rgba(255, 255, 255, 0.08); border-radius: 9999px; height: 5px; margin: 10px 0 14px 0; overflow: hidden;">
+              <div style="background: linear-gradient(90deg, #f59e0b, #fbbf24); width: 88%; height: 100%;"></div>
+            </div>
             <ul class="equipment-spec-list">
               <li><span>Target Payload:</span> <strong>Up to 48,000 lbs</strong></li>
               <li><span>Accessory Rates:</span> <strong>Tarp Fees ($50–$150)</strong></li>
@@ -275,13 +287,16 @@
 
           <!-- Power Only -->
           <article class="equipment-card">
-            <div class="equipment-icon-wrap" aria-hidden="true" style="background: #f5f3ff; color: #7c3aed;">
+            <div class="equipment-icon-wrap" aria-hidden="true" style="background: rgba(168, 85, 247, 0.15); color: #c084fc; border: 1px solid rgba(168, 85, 247, 0.3);">
               <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z"/></svg>
             </div>
             <h3 class="equipment-title">Power Only / Drop &amp; Hook</h3>
-            <p style="color: var(--color-slate-600); font-size: var(--font-size-sm); margin-bottom: var(--space-3);">
+            <p style="color: #94a3b8; font-size: var(--font-size-sm); margin-bottom: var(--space-3);">
               Tractor-only dispatch pulling pre-loaded third-party trailers, logistics network moves, and asset repositioning routes.
             </p>
+            <div style="background: rgba(255, 255, 255, 0.08); border-radius: 9999px; height: 5px; margin: 10px 0 14px 0; overflow: hidden;">
+              <div style="background: linear-gradient(90deg, #a855f7, #c084fc); width: 90%; height: 100%;"></div>
+            </div>
             <ul class="equipment-spec-list">
               <li><span>Advantage:</span> <strong>Zero Trailer Maintenance</strong></li>
               <li><span>Turnaround:</span> <strong>Fast Drop &amp; Hook Turns</strong></li>
@@ -296,7 +311,10 @@
     <section class="section section-alt" aria-labelledby="servicesHeading">
       <div class="container">
         <div class="section-header">
-          <div class="section-eyebrow">Comprehensive Back-Office Support</div>
+          <div class="live-pill-badge">
+            <span class="pulse-radar" aria-hidden="true"></span>
+            <span>Comprehensive Back-Office Support</span>
+          </div>
           <h2 id="servicesHeading" class="section-title">Core Dispatch Services</h2>
           <p class="section-subtitle">Specialized dispatch and documentation management designed to keep commercial motor carriers profitable.</p>
         </div>
@@ -371,25 +389,31 @@
       </div>
     </section>
 
-    <!-- How the Engagement Works (Strict Sequence) -->
+    <!-- How the Engagement Works (Strict Sequence Pipeline) -->
     <section class="section" aria-labelledby="workflowHeading">
       <div class="container content-measure">
         <div class="section-header">
-          <div class="section-eyebrow">Operational Workflow</div>
+          <div class="live-pill-badge">
+            <span class="pulse-radar" aria-hidden="true"></span>
+            <span>Transparent 5-Step Pipeline</span>
+          </div>
           <h2 id="workflowHeading" class="section-title">How the Engagement Works</h2>
           <p class="section-subtitle">A transparent, sequential workflow from initial carrier onboarding to post-service invoicing.</p>
         </div>
 
-        <div class="notice-box notice-box-accent">
-          <h3>Strict Policy: No Upfront Charges</h3>
+        <div class="notice-box notice-box-accent" style="margin-bottom: var(--space-8);">
+          <div style="display: flex; align-items: center; gap: 8px; margin-bottom: 6px;">
+            <svg style="width: 20px; height: 20px; fill: var(--color-brand-accent);" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-2h2v2zm0-4h-2V7h2v6z"/></svg>
+            <h3 style="margin-bottom: 0;">Strict Policy: Zero Upfront Charges</h3>
+          </div>
           <p>
-            Tech Logistics LLC does not charge any upfront deposits, setup fees, or retainers. We bill only after the dispatch service for your agreed loads has been fully completed and delivered.
+            Tech Logistics LLC does not charge any upfront deposits, setup fees, or retainers. We bill only after the dispatch service for your agreed loads has been fully completed and delivered. Invoices reflect charges as <strong>Extreme Dispatch Fee</strong>, processed securely via Stripe.
           </p>
         </div>
 
         <ol class="sequence-list">
           <li class="sequence-item">
-            <div class="sequence-number" aria-hidden="true">1</div>
+            <div class="sequence-number" aria-hidden="true">01</div>
             <div class="sequence-content">
               <h3>Onboarding and Paperwork</h3>
               <p>
@@ -399,7 +423,7 @@
           </li>
 
           <li class="sequence-item">
-            <div class="sequence-number" aria-hidden="true">2</div>
+            <div class="sequence-number" aria-hidden="true">02</div>
             <div class="sequence-content">
               <h3>Load Sourcing and Rate Negotiation</h3>
               <p>
@@ -409,7 +433,7 @@
           </li>
 
           <li class="sequence-item">
-            <div class="sequence-number" aria-hidden="true">3</div>
+            <div class="sequence-number" aria-hidden="true">03</div>
             <div class="sequence-content">
               <h3>Booking and Scheduling</h3>
               <p>
@@ -419,7 +443,7 @@
           </li>
 
           <li class="sequence-item">
-            <div class="sequence-number" aria-hidden="true">4</div>
+            <div class="sequence-number" aria-hidden="true">04</div>
             <div class="sequence-content">
               <h3>Service Completed</h3>
               <p>
@@ -429,7 +453,7 @@
           </li>
 
           <li class="sequence-item">
-            <div class="sequence-number" aria-hidden="true">5</div>
+            <div class="sequence-number" aria-hidden="true">05</div>
             <div class="sequence-content">
               <h3>Invoice Issued and Fee Collected</h3>
               <p>
@@ -477,31 +501,55 @@
     <section class="section section-alt" aria-labelledby="audienceHeading">
       <div class="container">
         <div class="section-header">
-          <div class="section-eyebrow">Motor Carrier Partnership</div>
+          <div class="live-pill-badge">
+            <span class="pulse-radar" aria-hidden="true"></span>
+            <span>Motor Carrier Partnership</span>
+          </div>
           <h2 id="audienceHeading" class="section-title">Who Tech Logistics LLC Serves</h2>
           <p class="section-subtitle">Dedicated dispatch solutions built specifically for commercial motor carriers operating across the United States.</p>
         </div>
 
         <div class="services-grid">
           <article class="service-card">
+            <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: var(--space-3);">
+              <span class="live-pill-badge" style="margin-bottom: 0; font-size: 11px; padding: 2px 8px;">1 Power Unit</span>
+              <span style="color: #60a5fa; font-size: var(--font-size-xs); font-weight: 700;">Solo Authority</span>
+            </div>
             <h3 class="service-card-title">Owner-Operators</h3>
             <p class="service-card-desc">
               Independent drivers operating under their own active motor carrier authority who require a dedicated partner to secure high-paying freight and handle broker paperwork while they focus on the road.
             </p>
+            <div style="margin-top: auto; padding-top: var(--space-4); border-top: 1px solid rgba(255, 255, 255, 0.08); font-size: var(--font-size-xs); color: #94a3b8;">
+              <span>Focus: Rate Optimization &bull; Zero Forced Dispatch</span>
+            </div>
           </article>
 
           <article class="service-card">
+            <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: var(--space-3);">
+              <span class="live-pill-badge" style="margin-bottom: 0; font-size: 11px; padding: 2px 8px;">2–25 Units</span>
+              <span style="color: #34d399; font-size: var(--font-size-xs); font-weight: 700;">Multi-Driver</span>
+            </div>
             <h3 class="service-card-title">Small Fleet Owners</h3>
             <p class="service-card-desc">
               Growing fleet operators managing 2 to 25 power units who require consolidated dispatching, scheduling, and broker packet management across multiple drivers.
             </p>
+            <div style="margin-top: auto; padding-top: var(--space-4); border-top: 1px solid rgba(255, 255, 255, 0.08); font-size: var(--font-size-xs); color: #94a3b8;">
+              <span>Focus: Fleet Scheduling &bull; Dedicated Dispatch Specialist</span>
+            </div>
           </article>
 
           <article class="service-card">
+            <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: var(--space-3);">
+              <span class="live-pill-badge" style="margin-bottom: 0; font-size: 11px; padding: 2px 8px;">25+ Units</span>
+              <span style="color: #f59e0b; font-size: var(--font-size-xs); font-weight: 700;">Enterprise Overflow</span>
+            </div>
             <h3 class="service-card-title">Independent Trucking Companies</h3>
             <p class="service-card-desc">
               Established motor carriers seeking reliable, scalable back-office dispatch capacity without the fixed overhead of maintaining internal dispatch personnel.
             </p>
+            <div style="margin-top: auto; padding-top: var(--space-4); border-top: 1px solid rgba(255, 255, 255, 0.08); font-size: var(--font-size-xs); color: #94a3b8;">
+              <span>Focus: Scalable Back-Office &bull; Factoring Coordination</span>
+            </div>
           </article>
         </div>
       </div>
@@ -511,29 +559,35 @@
     <section class="section" aria-labelledby="homeContactHeading">
       <div class="container content-measure">
         <div class="section-header">
-          <div class="section-eyebrow">Customer Support &amp; Onboarding</div>
+          <div class="live-pill-badge">
+            <span class="pulse-radar" aria-hidden="true"></span>
+            <span>Customer Support &amp; Onboarding Desk</span>
+          </div>
           <h2 id="homeContactHeading" class="section-title">Contact Tech Logistics LLC Directly</h2>
           <p class="section-subtitle">Our dispatch and customer support team is available to assist you with carrier onboarding, load inquiries, or billing matters.</p>
         </div>
 
-        <div class="service-card" style="border-left: 4px solid var(--color-brand-accent);">
-          <h3 class="service-card-title">Registered Office &amp; Support Channels</h3>
+        <div class="service-card" style="border-left: 4px solid var(--color-brand-accent); background: #0f172a; box-shadow: 0 20px 45px -10px rgba(0, 0, 0, 0.6);">
+          <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: var(--space-4); border-bottom: 1px solid rgba(255, 255, 255, 0.1); padding-bottom: var(--space-3);">
+            <h3 class="service-card-title" style="margin-bottom: 0;">Carrier Operations Terminal</h3>
+            <span class="console-badge-active">Desk Active</span>
+          </div>
           <p class="service-card-desc">
             You may reach Tech Logistics LLC via telephone, email, or postal correspondence:
           </p>
-          <ul style="list-style: none; display: flex; flex-direction: column; gap: var(--space-3); margin-bottom: var(--space-6);">
+          <ul style="list-style: none; display: flex; flex-direction: column; gap: var(--space-3); margin-bottom: var(--space-6); color: #cbd5e1;">
             <li><strong>Legal Entity:</strong> Tech Logistics LLC</li>
             <li><strong>Registered Address:</strong> 30 North Gould Street, Ste 31304, Sheridan, WY 82801, US</li>
-            <li><strong>Primary Support Telephone:</strong> <a href="tel:+14079559338">+1 (407) 955-9338</a></li>
-            <li><strong>Direct / Alternate Line:</strong> <a href="tel:+923331401384">+923331401384</a></li>
-            <li><strong>Support &amp; Inquiries Email:</strong> <a href="mailto:support@techlogisticsllc.altrixcore.com">support@techlogisticsllc.altrixcore.com</a></li>
-            <li><strong>Statement Descriptor:</strong> Extreme Dispatch Fee</li>
+            <li><strong>Primary Support Telephone:</strong> <a href="tel:+14079559338" style="color: #60a5fa; font-weight: 700;">+1 (407) 955-9338</a></li>
+            <li><strong>Direct / Alternate Line:</strong> <a href="tel:+923331401384" style="color: #60a5fa; font-weight: 700;">+923331401384</a></li>
+            <li><strong>Support &amp; Inquiries Email:</strong> <a href="mailto:support@techlogisticsllc.altrixcore.com" style="color: #60a5fa; font-weight: 700;">support@techlogisticsllc.altrixcore.com</a></li>
+            <li><strong>Statement Descriptor:</strong> <span style="color: #fbbf24; font-weight: 700;">Extreme Dispatch Fee</span></li>
             <li><strong>Operating Hours:</strong> Monday – Friday: 8:00 AM – 6:00 PM (EST)</li>
-            <li><strong>Response Time:</strong> All inquiries answered within 2 hours</li>
+            <li><strong>Expected Response Time:</strong> <span style="color: #34d399; font-weight: 700;">All inquiries answered within 2 hours</span></li>
           </ul>
-          <div>
+          <div style="display: flex; flex-wrap: wrap; gap: var(--space-3);">
             <a href="contact.html" class="btn btn-primary">Open Contact Portal</a>
-            <a href="services.html" class="btn btn-secondary" style="margin-left: var(--space-3);">Review Services &amp; Terms</a>
+            <a href="services.html" class="btn btn-outline-white">Review Services &amp; Terms</a>
           </div>
         </div>
       </div>
@@ -550,6 +604,12 @@
             Tech Logistics LLC provides professional truck dispatch services for commercial trucking companies and owner-operators across the United States. We charge our service fee only after services are completely fulfilled.
           </p>
           <address class="footer-address-block"><strong>Registered Address:</strong><br>30 North Gould Street, Ste 31304, Sheridan, WY 82801, US</address>
+          <div style="margin-top: var(--space-4);">
+            <span class="live-pill-badge" style="font-size: 11px; padding: 3px 10px; margin-bottom: 0;">
+              <span class="pulse-radar" style="width: 6px; height: 6px;" aria-hidden="true"></span>
+              <span>US Commercial Freight Desks Operational</span>
+            </span>
+          </div>
         </div>
 
         <div class="footer-col">
