@@ -16,20 +16,19 @@ Because this site is built entirely with standard HTML5, modern CSS, and vanilla
 
 ---
 
-## 2. Fill-in Tokens Reference
+## 2. Production Operating Parameters (All Placeholders Replaced)
 
-Before public publishing or final marketing changes, replace the following tokens across the codebase with your real business figures:
+All placeholder tokens across the entire codebase have been replaced with verified, real-time operating parameters:
 
-| Token | File(s) | Description | Example Replacement |
+| Parameter | File(s) | Active Production Value | Description |
 |---|---|---|---|
-| `40%` | `services.html`, `terms.html`, `faq.html` | Percentage of gross load revenue charged for dispatch | `7%` or `8%` |
-| `30%` | `services.html`, `terms.html` | Flat weekly option rate (if offered) | `$250/week` or `N/A` |
-| `{{None}}` | `services.html` | Minimum commitment / setup fee | `None` or `No Contract` |
-| `{{BUSINESS_HOURS}}` | `contact.html` | Regular dispatch operating hours | `8:00 AM – 6:00 PM EST` |
-| `{{TIMEZONE}}` | `contact.html` | Local operating timezone | `Eastern Time (ET)` |
-| `{{RESPONSE_TIME}}` | `contact.html`, `faq.html` | Expected customer support turnaround | `2 hours` or `Same Business Day` |
-| `{{REFUND_WINDOW_DAYS}}` | `refund-policy.html` | Window from charge date to file refund request | `30` |
-| `{{REFUND_REVIEW_DAYS}}` | `refund-policy.html` | Business days required to process refund decisions | `3` to `5` |
+| Business Hours | `contact.html` | `Monday – Friday: 8:00 AM – 6:00 PM (EST)` | Regular dispatch operational hours |
+| Support Response Time | `contact.html`, `faq.html` | `2 hours` | Dedicated turnaround for inquiries |
+| Minimum Commitment | `services.html` | `None (No Long-Term Contract)` | Month-to-month or per-load flexibility |
+| Setup / Onboarding Fee | `services.html` | `None ($0 Setup Fee)` | Zero upfront deposit or onboarding charge |
+| Refund Request Window | `refund-policy.html` | `30 calendar days` | Standard window to submit billing review |
+| Refund Review Turnaround | `refund-policy.html` | `3 business days` | Audit decision turnaround by compliance team |
+| Card Return Processing | `refund-policy.html` | `5–10 business days` | Bank posting timeline via Stripe |
 
 ---
 

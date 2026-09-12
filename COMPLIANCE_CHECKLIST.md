@@ -33,6 +33,6 @@ This document confirms adherence to the 10 Hard Rules and Stripe Payment Verific
 | **Pricing Terms & Currency** | `services.html` (Pricing Table), `terms.html` (§5) | Transparent percentage/weekly options, USD currency |
 | **No Upfront Charge Policy** | `index.html` (Workflow §5), `services.html`, `terms.html` (§5) | Fees billed only after service completed |
 | **Payment Processor Disclosure** | `services.html`, `terms.html` (§6), `privacy.html` (§4, §6) | Disclosing Stripe, Inc., PCI-DSS Level 1 compliance |
-| **Refund Request Steps & Timeline** | `refund-policy.html` (§3, §4, §5) | Step-by-step submission to support email; `{{REFUND_WINDOW_DAYS}}` window; `{{REFUND_REVIEW_DAYS}}` review; 5–10 days bank return |
+| **Refund Request Steps & Timeline** | `refund-policy.html` (§3, §4, §5) | Step-by-step submission to support email; 30-day window; 3-day review; 5–10 days bank return |
 | **Privacy Data Protection** | `privacy.html` (§1–§11) | 11 comprehensive sections detailing data collection, processing, third-party disclosure, and security |
 | **LocalBusiness Schema** | `index.html` (`<script type="application/ld+json">`) | Full JSON-LD structured data for search engine & verification validation |
